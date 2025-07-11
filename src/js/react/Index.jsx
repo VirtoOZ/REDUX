@@ -1,16 +1,27 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./components/app/app.jsx"
+// import { createStore } from "redux";
+// const reducer = (state = 0, action) => {
+// 	switch (action.type) {
+// 		case 'INC':
+// 			return ++state;
+// 		default:
+// 			return state;
+// 	}
+// };
 
+// store.subscribe(() => {
+// 	console.log(store.getState());
+// });
 
-// Объект для вывода
-const root = document.querySelector("#root")
-	? document.querySelector("#root")
-	: document.querySelector(".wrapper");
+// const store = createStore(reducer);
+// console.log(store.getState());
 
-// Main rendering
-ReactDOM.createRoot(root).render(
-	<React.StrictMode>
-		<App />
-	</React.StrictMode>
-);
+// store.dispatch({ type: 'INC' });
+// console.log(store.getState());
+
+// let state = reducer(undefined, {});
+
+// state = reducer(state, { type: 'INC' });
+// console.log(state);
+// state = reducer(state, { type: 'INC' });
+// console.log(state);
+
